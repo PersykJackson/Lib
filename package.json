@@ -1,6 +1,6 @@
 {
   "name": "shared-library",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Shared library",
   "main": "index.js",
   "scripts": {
