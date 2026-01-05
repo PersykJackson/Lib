@@ -4,9 +4,10 @@
     "target": "es2018",
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "jsx": "react-jsx",
     "rootDir": "./src",
     "skipLibCheck": true,
     "outDir": "./dist"
   },
-  "exclude": ["src/tests/*"]
+  "exclude": ["src/tests/*", "dist"]
 }

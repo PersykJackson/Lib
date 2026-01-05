@@ -2,7 +2,7 @@
   "name": "shared-library",
   "version": "0.0.4",
   "description": "Shared library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
