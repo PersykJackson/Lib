@@ -1,10 +1,9 @@
 export const createRunOnce = () => {
     const context = { firstRun: true };
-
-    return (fn: () => void) => {
+    return (fn) => {
         if (context.firstRun) {
             context.firstRun = false;
             fn();
         }
-    }
-}
+    };
+};
