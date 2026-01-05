@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "target": "es2018",
     "esModuleInterop": true,
-    "experimentalDecorators": true
-  }
+    "experimentalDecorators": true,
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "outDir": "./dist"
+  },
+  "exclude": ["src/tests/*"]
 }
