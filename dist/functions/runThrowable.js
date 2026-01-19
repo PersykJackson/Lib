@@ -1,4 +1,7 @@
-export const runThrowable = (fn, onSuccess, onError) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.runThrowable = void 0;
+const runThrowable = (fn, onSuccess, onError) => {
     try {
         onSuccess(fn());
     }
@@ -6,3 +9,4 @@ export const runThrowable = (fn, onSuccess, onError) => {
         onError(e);
     }
 };
+exports.runThrowable = runThrowable;

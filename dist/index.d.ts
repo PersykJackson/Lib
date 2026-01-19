@@ -3,6 +3,7 @@ export { ConsoleDriver } from './classes/Logger/Drivers/ConsoleDriver';
 export { If } from './components/If';
 export { Switch } from './components/Switch';
 export { onCall } from './decorators/onCall';
+export { assertType } from './functions/assertType';
 export { computedValue } from './functions/computedValue';
 export { createRunOnce } from './functions/createRunOnce';
 export { memoize } from './functions/memoize';

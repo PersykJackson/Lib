@@ -1,10 +1,13 @@
-export var LogLevel;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Logger = exports.LogLevel = void 0;
+var LogLevel;
 (function (LogLevel) {
     LogLevel["INFO"] = "Info";
     LogLevel["WARN"] = "Warning";
     LogLevel["ERROR"] = "Error";
-})(LogLevel || (LogLevel = {}));
-export class Logger {
+})(LogLevel || (exports.LogLevel = LogLevel = {}));
+class Logger {
     constructor(driver) {
         this.driver = driver;
     }
@@ -22,3 +25,4 @@ export class Logger {
         this.log(LogLevel.ERROR, message);
     }
 }
+exports.Logger = Logger;

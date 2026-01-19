@@ -1,4 +1,7 @@
-export const objectUtils = (obj) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.objectUtils = void 0;
+const objectUtils = (obj) => {
     const objectEntries = Object.entries(obj);
     return {
         forEach: (fn) => {
@@ -19,3 +22,4 @@ export const objectUtils = (obj) => {
         },
     };
 };
+exports.objectUtils = objectUtils;

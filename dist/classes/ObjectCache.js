@@ -1,4 +1,7 @@
-export class ObjectCache {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ObjectCache = void 0;
+class ObjectCache {
     constructor(keys) {
         this.cache = new Map();
         this.keys = keys;
@@ -26,3 +29,4 @@ export class ObjectCache {
         }
     }
 }
+exports.ObjectCache = ObjectCache;

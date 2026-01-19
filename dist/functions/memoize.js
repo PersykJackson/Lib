@@ -1,4 +1,7 @@
-export const memoize = (fn) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.memoize = void 0;
+const memoize = (fn) => {
     const cache = new Map();
     return (...args) => {
         const json = JSON.stringify(args, (_, value) => (typeof value === 'function' ? String(value) : value));
@@ -10,3 +13,4 @@ export const memoize = (fn) => {
         return result;
     };
 };
+exports.memoize = memoize;

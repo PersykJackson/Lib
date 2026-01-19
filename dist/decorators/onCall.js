@@ -1,4 +1,7 @@
-export const onCall = (fn) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.onCall = void 0;
+const onCall = (fn) => {
     return (target, _, descriptor) => {
         const original = descriptor.value;
         descriptor.value = function (...args) {
@@ -8,3 +11,4 @@ export const onCall = (fn) => {
         return descriptor;
     };
 };
+exports.onCall = onCall;

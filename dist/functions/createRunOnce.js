@@ -1,4 +1,7 @@
-export const createRunOnce = () => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createRunOnce = void 0;
+const createRunOnce = () => {
     const context = { firstRun: true };
     return (fn) => {
         if (context.firstRun) {
@@ -7,3 +10,4 @@ export const createRunOnce = () => {
         }
     };
 };
+exports.createRunOnce = createRunOnce;
