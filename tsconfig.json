@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
     "declaration": true,
     "target": "es2018",
     "esModuleInterop": true,
+    "moduleResolution": "node",
     "experimentalDecorators": true,
     "jsx": "react-jsx",
     "rootDir": "./src",

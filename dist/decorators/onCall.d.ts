@@ -1,1 +1,0 @@
-export declare const onCall: <T = object>(fn: (target: T) => void) => (target: T, _: string, descriptor: TypedPropertyDescriptor<(...args: unknown[]) => unknown>) => TypedPropertyDescriptor<(...args: unknown[]) => unknown>;
