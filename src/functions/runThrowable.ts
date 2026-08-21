@@ -6,6 +6,8 @@ export const runThrowable = <T>(
     try {
         onSuccess(fn());
     } catch (e) {
-        onError(e);
+        if (e instanceof Error) {
+            onError(e);
+        }
     }
 };

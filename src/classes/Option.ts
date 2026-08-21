@@ -4,7 +4,7 @@ export class Option<T> {
     ) {}
 
     private get(): T {
-        return this.value;
+        return this.value as T;
     }
 
     get isEmpty(): boolean {
@@ -20,7 +20,7 @@ export class Option<T> {
             return new Option;
         }
 
-        return new Option(fn(this.value));
+        return new Option(fn(this.value as T));
     }
 
     public applyIfExist(onValueExist: (value: T) => void) {
@@ -37,7 +37,7 @@ export class Option<T> {
         if (this.isEmpty) {
             onEmpty();
         } else {
-            onValueExist(this.value);
+            onValueExist(this.value as T);
         }
     }
 }

@@ -4,7 +4,7 @@ export const onCall = <T = object>(fn: (target: T) => void) => {
 
         descriptor.value = function (...args) {
             fn(target);
-            return original.apply(this, args);
+            return original?.apply(this, args);
         };
 
         return descriptor;

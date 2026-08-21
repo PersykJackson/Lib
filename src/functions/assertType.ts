@@ -2,5 +2,5 @@ import { ZodType } from 'zod';
 
 export const assertType = <T extends ZodType>(
     type: T,
-    value: any,
+    value: unknown,
 ) => type.parse(value);
