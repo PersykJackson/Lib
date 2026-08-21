@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "declaration": true,
-    "target": "es2018",
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "jsx": "react-jsx",
-    "rootDir": "./src",
     "skipLibCheck": true,
-    "outDir": "./dist"
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/types",
+    "rootDir": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "jsx": "react-jsx",
+    "experimentalDecorators": true
   },
-  "exclude": ["src/tests/*", "dist"]
+  "include": ["src/**/*"],
+  "exclude": ["src/tests"]
 }

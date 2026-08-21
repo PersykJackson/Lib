@@ -5,7 +5,7 @@ export const objectUtils = <T extends object>(obj: T) => {
         forEach: (fn: (key: string, value: T[keyof T]) => void) => {
           objectEntries.forEach(([key, value]) => fn(key, value));
         },
-        map: <Result extends object = undefined>(fn: (key: string, value: T[keyof T]) => void | Record<string, unknown>): Result => {
+        map: <Result extends object>(fn: (key: string, value: T[keyof T]) => void | Record<string, unknown>): Result => {
             let result: Result;
 
             objectEntries.forEach(([key, value]) => {
@@ -19,7 +19,7 @@ export const objectUtils = <T extends object>(obj: T) => {
                 }
             });
 
-            return result;
+            return result!;
         },
     };
 };

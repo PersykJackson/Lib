@@ -1,0 +1,1 @@
+{"version":3,"file":"onCall.d.ts","sourceRoot":"","sources":["../../../../src/decorators/onCall.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,MAAM,GAAI,CAAC,GAAG,MAAM,EAAE,IAAI,CAAC,MAAM,EAAE,CAAC,KAAK,IAAI,MAC9C,QAAQ,CAAC,EAAE,GAAG,MAAM,EAAE,YAAY,uBAAuB,CAAC,CAAC,GAAG,IAAI,EAAE,OAAO,EAAE,KAAK,OAAO,CAAC,uCAAtB,OAAO,EAAE,KAAK,OAAO,CAUpG,CAAA"}
